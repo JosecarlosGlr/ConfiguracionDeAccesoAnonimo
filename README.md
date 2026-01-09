@@ -1,1 +1,1 @@
-# ConfiguracionDeAccesoAnonimo
+# Configuración de acceso anónimo
