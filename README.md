@@ -1,14 +1,13 @@
 # Configuración de acceso anónimo
 
-
 ![](https://raw.githubusercontent.com/JosecarlosGlr/ConfiguracionDeAccesoAnonimo/refs/heads/main/1.png)
 
-Lo primero de todo para activar el acceso anónimo creo un usuario llamado anonymous el cual no necesita contraseña
+Para activar el acceso anónimo, he creado un usuario específico llamado **"anonymous"**. En el apartado de autenticación, he seleccionado la opción **"Do not require authentication"**, permitiendo así la conexión sin necesidad de contraseña.
 
 ![](https://raw.githubusercontent.com/JosecarlosGlr/ConfiguracionDeAccesoAnonimo/refs/heads/main/2.png)
 
-Después lo configuro con las rutas de acceso para que tenga las mismas que el grupo que he creado en la anterior practica y lo configuro solo para lectura
+Posteriormente, he configurado los puntos de montaje vinculando la ruta nativa `/home` al directorio raíz virtual `/`. Para cumplir con las directivas de seguridad, he establecido el modo de acceso en **"Read only"** (Solo lectura) y he desactivado la capacidad de escribir en la estructura de directorios.
 
 ![](https://raw.githubusercontent.com/JosecarlosGlr/ConfiguracionDeAccesoAnonimo/refs/heads/main/4.png)
 
-Finalmente usando filezilla client me conecto con el usuario anónimo al servidor
+Finalmente, he realizado la comprobación utilizando **FileZilla Client**. Como se observa en el log de la consola, la conexión TLS se establece correctamente y el usuario anónimo logra recuperar el listado del directorio sin errores, confirmando que el acceso restringido está operativo.
